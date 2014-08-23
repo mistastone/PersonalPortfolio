@@ -9,9 +9,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-  <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+  <!-- <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'> -->
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
   
   <title><?php  wp_title( '| ', true, 'right' );  ?></title>
   <?php // Load our CSS ?>

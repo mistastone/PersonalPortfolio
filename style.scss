@@ -97,32 +97,38 @@ Header and Background
 .header {
   // width: 97%;
   width: 100%;
-  font: 400 16px/150% "Source Sans Pro", "Sans-serif", "serif";
+  font: 300 19px/150% "Oswald", "Sans-serif", "serif";
   margin: 0;
   a {
   color: #fff;
-  float: right;
   text-decoration: none;
  /* position: fixed;*/
-  text-transform: uppercase;
+  // text-transform: uppercase;
   }
 }
 
 .menu {
   background-color: #262626;
-  // width:97%;
-  width: 100%;
-  // float: right;
   position: fixed;
+  right:0;
+  top: 200px;
   z-index: 1;
+  width: 265px;
+  box-shadow: 2px 2px 2px #262626;
 }
 
 .menu li {
   list-style: none;
-  float: right;
-  padding: 40px 20px 40px 20px;
+  float: left;
+  padding: 7px 15px 7px 15px;
+  letter-spacing: 1px;
+  color: #f7f7f7; 
   a:hover {
   color:#B81F24;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   }
 }
 
@@ -131,13 +137,10 @@ Header and Background
   height:38px;
   background-color: #B81F24;
   position: absolute;
-  position: fixed;
   left: 0;
   top: 37px;
-  z-index: 2;
   h1 {
   font: 300 25px/150% "Oswald", "Sans-serif", "serif";
-  letter-spacing: 2px;
   position: absolute;
   color: #fff;
   left: 140px;
@@ -149,20 +152,21 @@ Header and Background
 }
 
 .devribbon {
-  width:285px;
+  width:265px;
   background-color: #B81F24;
   float: right;
   position: absolute;
   right:0;
-  top: 200px;
+  top: 40px;
   z-index: 0;
   h1 {
   font: 300 25px/150% "Oswald", "Sans-serif", "serif";
   color: #fff;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   padding-left: 15px;
-  padding-top:3px;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
+   padding-top: 5px;
+  letter-spacing: 2px;
   }
 }
 
@@ -173,15 +177,19 @@ Section Ribbon
 */
 
 .aboutribbon {
-  background: #B81F24;
+  background: #262626;
   width:325px;
   float: left;
+  box-shadow: 2px 2px 2px #262626;
   h1 {
-  font: 400 16px/150% "Source Sans Pro", "Sans-serif", "serif";
+  font: 300 25px/150% "Oswald", "Sans-serif", "serif";
   letter-spacing: 2px;
   padding-left: 15px;
-  color: #f7f7f7; 
-  text-transform: uppercase;
+  color: #f7f7f7;
+  // text-transform: uppercase;
+  a:link {
+    text-decoration: none;
+  }
 }
 }
 
@@ -208,27 +216,26 @@ About Section
   margin: 0 auto;
   img {
     width: 350px;
-    margin: 0 50px 50px 15%;
+    margin: 0 70px 50px 15%;
+    // border: 5px solid white;
+    box-shadow: 2px 2px 2px #262626;
     float: left;
   }
   h3 {
-    font: 400 16px/150% "Lora", "Sans-serif", "serif";
+    font: 400 23px/150% "Dosis", "Sans-serif", "serif";
   }
   p {
-    font: 400 13px/150% "Lora", "Sans-serif", "serif";
+    font: 400 16px/150% "Dosis", "Sans-serif", "serif";
     padding-bottom:7px;
-    width: 77%;
+    width: 80%;
   }
 }
 
 .aboutcontent ul li {
-  font: 400 13px/150% "Lora", "Sans-serif", "serif";
+  font: 400 16px/150% "Dosis", "Sans-serif", "serif";
   list-style-type: disc;
-}
-
-hr {
-  margin-right: 22%;
-}
+  width: 80%;
+} 
 
 /*
 ====================================================
@@ -236,34 +243,81 @@ Portfolio Section
 ====================================================
 */
 
+.portup {
+  margin-left: 8%;
+  clear: both;
+}
+
 .portfoliosection {
   background: #f0f0f0;
 }
 
-.portup {
-  margin-left: 8%;
-  clear: both;
-  img {
-    width: 500px;
-  }
+.portfoliopiece {
+  width: 30%;
+  position: relative;
+  margin-top: 70px;
 }
 
-#responsive,
-#other-portfolio-item,
-#htmlcssjquery-client-site {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  float: left;
+.portfolioPieceContent {
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.75);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  color:white;
   text-align: center;
-  width: 30%;
-  padding: 10px;
-  h2 {
-    font: 400 18px/150% "Source Sans Pro", "Sans-serif", "serif";
+  padding-top: 20%;
+  p {
+    font: 400 17px/150% "Dosis", "Sans-serif", "serif";
   }
-  h3 {
-    font: 400 14px/150% "Source Sans Pro", "Sans-serif", "serif";
+  h3{
+    font: 400 21px/150% "Dosis", "Sans-serif", "serif";
   }
+  }
+
+.portfoliopiece:hover .portfolioPieceContent {
+  visibility: visible;
+  opacity: 1;
 }
+
+.portfolioPicture img {
+      width: 100%;
+      height: auto;
+    }
+
+.portribbon {
+    a {
+      text-decoration: none;
+    }
+    }
+  
+
+
+
+
+// #responsive,
+// #other-portfolio-item,
+// #htmlcssjquery-client-site {
+//   margin-top: 50px;
+//   margin-bottom: 50px;
+//   float: left;
+//   text-align: center;
+//   width: 30%;
+//   padding: 10px;
+//   h2 {
+//     font: 400 18px/150% "Source Sans Pro", "Sans-serif", "serif";
+//   }
+//   h3 {
+//     font: 400 14px/150% "Source Sans Pro", "Sans-serif", "serif";
+//   }
+// }
+
+
+
 
 /*
 ====================================================
@@ -278,6 +332,43 @@ Contact Section
 
 /*
 ====================================================
+Blog Section
+====================================================
+*/
+
+
+article  {
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 150px;
+  font: 400 20px/180% "Source Serif Pro", "Open Sans", sans-serif;
+  h2 a {
+    font: 400 50px/150% "Oswald", "Open Sans", sans-serif;
+    text-decoration: none;
+    color: black;
+  }
+  }
+
+/*
+====================================================
+Single Blog Section
+====================================================
+*/
+
+.full  {
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 150px;
+  font: 400 20px/180% "Source Serif Pro", "Open Sans", sans-serif;
+  h2 a {
+    font: 400 50px/150% "Oswald", "Open Sans", sans-serif;
+    text-decoration: none;
+    color: black;
+  }
+  }
+
+/*
+====================================================
 Footer Section
 ====================================================
 */
@@ -285,5 +376,5 @@ Footer Section
 .footer {
   clear: both;
   text-align: center;
-  font: 400 13px/150% "Source Sans Pro", "Sans-serif", "serif";
+  font: 400 13px/150% "Dosis", "Sans-serif", "serif";
 }

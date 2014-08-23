@@ -2,7 +2,7 @@
 
 <!-- Main Background Image and Header -->
 	<div class="mainbackground">
-		<img src="wp-content/themes/theme-hackeryou/assets/images/background.jpg" alt="Main background image">
+		<img src="wp-content/themes/theme-hackeryou/assets/images/background6.jpg" alt="Main background image">
 	</div>
 	
 	<div class="ribbon">
@@ -23,19 +23,24 @@
 		<div class="writeup">
 
 			<div class="aboutcontent clearfix">
-				<img src="wp-content/themes/theme-hackeryou/assets/images/michael.jpg" alt="Michael">
+				<img src="wp-content/themes/theme-hackeryou/assets/images/michael2.jpg" alt="Michael">
 				<h3>About</h3>
-				<hr>
-				<p>Hello. I am a front-end web developer and writer from Toronto. Hello. I am a front-end web developer and writer from Toronto.Hello. I am a front-end web developer and writer from Toronto.Hello. I am a front-end web developer and writer from Toronto.Hello. I am a front-end web developer and writer from Toronto.Hello. I am a front-end web developer and writer from Toronto.</p>
+			
+				<p>Hello! My name is Michael and I am a front-end web developer and designer based in Toronto.
+				I love web development because it lives at the intersection of order and creativity. My goal is to focus on both of these factors equally by creating functional technology as well as beautiful design.</p>
+
+				<h3>Human</h3>
+			
+				<p>Philosophy is the foundation for all of our behaviour. My core philosophical values include honesty, reason, hard work, humour, and respect for others. I implement these values in all aspects of my life, from professional to social, and because of this I can be trusted to build amazing products and solid relationships while (hopefully) having an awesome time doing it.</p>
 
 				<h3>Skills</h3>
-				<hr>
+				
 				<ul>
 					<li>Proficient in HTML5, CSS3, and SASS</li>
 					<li>Comfortable working with JavaScript and jQuery</li>
 					<li>Built apps using AJAX and various APIs</li>
 					<li>Comfortable building fully functional WordPress sites and using the WordPress back-end</li>
-					<li>Being a writer also enables me to write excellent content</li>
+					<li>A background in writing enables me to produce excellent copy</li>
 				</ul>
 
 				</div>
@@ -78,48 +83,57 @@
 <!-- Portfolio Section -->
 	<section class="portfoliosection">
 		<div class="aboutribbon">
-			<h1>Portfolio</h1>
+			<h1>Featured Items</h1>
 		</div>
 
 		<div class="portup clearfix">
-<?php
 
-$onePageQuery = new WP_Query( 
-	array( 
-		'posts_per_page' => -1,
-		'post_type' => 'portfolio', 
-		'orderby' => 'menu_order',
-		'order' => 'ASC',
-		) 
-); ?>
+<div class="portfolioList">
+      <?php
+      $onePageQuery = new WP_Query( 
+        array( 
+          'posts_per_page' => -1,
+          'post_type' => 'portfolio', 
+          'orderby' => 'menu_order',
+          'order' => 'ASC'
+          ) 
+      ); ?>
+      <?php if ( $onePageQuery->have_posts() ) : ?>
+        
+      <?php while ($onePageQuery->have_posts()) : $onePageQuery->the_post(); ?>
 
-<?php if ( $onePageQuery->have_posts() ) : ?>
+        <div class="portfoliopiece clearfix" id="<?php echo $post->post_name; ?>">
 
-	<?php while ($onePageQuery->have_posts()) : $onePageQuery->the_post(); ?>
 
-		<section id="<?php echo $post->post_name; ?>">
-		<?php while( has_sub_field('images') ): ?>
-            
-                <?php $image = get_sub_field('image'); ?>
-                <img src="<?php echo $image['sizes']['large'] ?>">
-            <?php endwhile; ?>
-			<h2><?php the_title(); ?></h2>
-			<?php the_content(); ?>
+              <div class="portfolioPicture">
+                 <?php the_post_thumbnail('small');?>
+              </div> <!-- ./portfolioPiecePicture -->
 
-			<h3><?php the_field('short_description'); ?></h3>
-			
-			<h3><?php the_field('client_name'); ?></h3>
-		</section>
-	<?php endwhile; ?>
-	
-	<?php wp_reset_postdata(); ?>
+              <a href="<?php the_permalink(); ?>">
 
+              <div class="portfolioPieceContent">
+                <h3><?php the_field('item_name') ?> <!-- created for --> <?php the_field('client_name') ?></h3>
+                <p><?php the_field('short_description') ?></p>
+                <p><?php the_field('long_description') ?></p>
+                <?php the_content(); ?>
+              </div> <!-- ./portfolioPieceContent  -->
+          </a>
+
+
+        </div> <!-- ./portfoliopiece -->
+        <?php endwhile; ?>
+        
+        <?php wp_reset_postdata(); ?>
+        
+      <?php endif; ?>
+    </div>
 	</div>
+	<div class="portribbon">
+		<a href="http://localhost/personalportfolio/portfolio"><h1>View More Items</h1></a>
+  </div><!-- ./portfolioList -->
+</div><!-- ./portfolio -->
+
 </section>
-	
-<?php else:  ?>
-	[stuff that happens if there aren't any posts]
-<?php endif; ?>
 
 	<section class = "contact">
 		<div class="aboutribbon">
