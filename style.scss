@@ -76,6 +76,7 @@ My Code Starts Here
 
 body {
   width: 100%;
+  background:#f0f0f0;
 }
 
 /*
@@ -97,10 +98,10 @@ Header and Background
 .header {
   // width: 97%;
   width: 100%;
-  font: 300 19px/150% "Oswald", "Sans-serif", "serif";
+  font: 300 25px/150% "Oswald", "Sans-serif", "serif";
   margin: 0;
   a {
-  color: #fff;
+  color: #f7f7f7;
   text-decoration: none;
  /* position: fixed;*/
   // text-transform: uppercase;
@@ -113,14 +114,14 @@ Header and Background
   right:0;
   top: 200px;
   z-index: 1;
-  width: 265px;
+  width: 288px;
   box-shadow: 2px 2px 2px #262626;
 }
 
 .menu li {
   list-style: none;
   float: left;
-  padding: 7px 15px 7px 15px;
+  padding: 1px 15px 1px 15px;
   letter-spacing: 1px;
   color: #f7f7f7; 
   a:hover {
@@ -142,7 +143,7 @@ Header and Background
   h1 {
   font: 300 25px/150% "Oswald", "Sans-serif", "serif";
   position: absolute;
-  color: #fff;
+  color: #f7f7f7;
   left: 140px;
   clear: both;
   span {
@@ -157,15 +158,14 @@ Header and Background
   float: right;
   position: absolute;
   right:0;
-  top: 40px;
+  top: 37px;
   z-index: 0;
   h1 {
   font: 300 25px/150% "Oswald", "Sans-serif", "serif";
-  color: #fff;
+  color: #f7f7f7;
   letter-spacing: 1px;
   padding-left: 15px;
-  padding-bottom: 5px;
-   padding-top: 5px;
+  padding-top: 1px;
   letter-spacing: 2px;
   }
 }
@@ -227,7 +227,7 @@ About Section
   p {
     font: 400 16px/150% "Dosis", "Sans-serif", "serif";
     padding-bottom:7px;
-    width: 80%;
+    width: 79%;
   }
 }
 
@@ -244,7 +244,6 @@ Portfolio Section
 */
 
 .portup {
-  margin-left: 8%;
   clear: both;
 }
 
@@ -256,6 +255,7 @@ Portfolio Section
   width: 30%;
   position: relative;
   margin-top: 70px;
+  margin-left: 35px;
 }
 
 .portfolioPieceContent {
@@ -287,15 +287,25 @@ Portfolio Section
 .portfolioPicture img {
       width: 100%;
       height: auto;
+      box-shadow: 2px 2px 2px #262626;
     }
 
-.portribbon {
-    a {
-      text-decoration: none;
-    }
-    }
-  
-
+.viewmore {
+  padding-bottom: 50px; 
+  a {
+  font: 400 24px/150% "Dosis", "Sans-serif", "serif";
+  color: #262626;
+  text-align: center;
+  text-decoration: none;
+  &:hover {
+    color: #B81F24;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+}
+}
 
 
 
@@ -327,7 +337,51 @@ Contact Section
 
 .contact {
   width: 100%;
+  background:#f0f0f0;
 }
+
+.contactform {
+  margin-top:70px;
+  margin-bottom: 40px;
+  margin-left: 80px;
+  p {
+    font: 400 17px/150% "Dosis", "Sans-serif", "serif";
+  input {
+    background:#f0f0f0;
+    // border: 1px solid #cccccc;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    &:focus {
+      outline: 0;
+    }
+  }
+  textarea {
+    background:#f0f0f0;
+    border: 1px solid #cccccc;
+    &:focus {
+      outline:0;
+    }
+  }
+  }
+ }
+
+ 
+
+ .contactform input[type="submit"] {
+  width: 100px;
+  margin-left: 2px;
+  font: 400 16px/150% "Dosis", "Sans-serif", "serif";
+  border-radius: 5px; 
+  &:hover {
+    cursor: pointer;
+    background:#B81F24;
+    opacity: 0.75;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+ }
 
 
 /*

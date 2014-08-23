@@ -128,11 +128,11 @@
       <?php endif; ?>
     </div>
 	</div>
-	<div class="portribbon">
-		<a href="http://localhost/personalportfolio/portfolio"><h1>View More Items</h1></a>
-  </div><!-- ./portfolioList -->
+	<div class="viewmore">
+		<a href="http://localhost/personalportfolio/portfolio"><h1>View Full Portfolio</h1></a>
+  </div>
 </div><!-- ./portfolio -->
-
+	
 </section>
 
 	<section class = "contact">
@@ -140,5 +140,8 @@
 			<h1>Contact</h1>
 		</div>
 	</section>
+		<div class="contactform">
+			<?php echo do_shortcode('[contact-form-7 id="81" title="Front Page Contact Form"]'); ?>
+		</div>	
 
 <?php get_footer(); ?>

@@ -86,102 +86,272 @@ img {
 My Code Starts Here
 =========================================================================================================================================================
 */
+body {
+  width: 100%;
+  background: #f0f0f0; }
+
 /*
 ====================================================
 Header and Background
 ====================================================
 */
-.mainbackground img {
+.mainbackground {
   width: 100%;
-  background-size: cover;
-  background-attachment: fixed; }
+  margin: 0 auto; }
+  .mainbackground img {
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed; }
 
 .header {
-  font: 400 21px/150% "Quicksand", "Sans-serif", "serif";
+  width: 100%;
+  font: 300 25px/150% "Oswald", "Sans-serif", "serif";
   margin: 0; }
-
-.header a {
-  color: #fff;
-  float: right;
-  text-decoration: none;
-  /* position: fixed;*/
-  /*text-transform: uppercase;*/ }
+  .header a {
+    color: #f7f7f7;
+    text-decoration: none;
+    /* position: fixed;*/ }
 
 .menu {
-  background-color: #000000;
-  width: 100%;
-  float: right;
-  opacity: 0.8;
+  background-color: #262626;
   position: fixed;
-  z-index: 1; }
+  right: 0;
+  top: 200px;
+  z-index: 1;
+  width: 288px;
+  -webkit-box-shadow: 2px 2px 2px #262626;
+          box-shadow: 2px 2px 2px #262626; }
 
-ul li {
+.menu li {
   list-style: none;
-  float: right;
-  padding: 30px 20px 30px 20px; }
-
-ul li a:hover {
-  color: #B81F24; }
+  float: left;
+  padding: 1px 15px 1px 15px;
+  letter-spacing: 1px;
+  color: #f7f7f7; }
+  .menu li a:hover {
+    color: #B81F24;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
 
 .ribbon {
-  width: 125px;
-  height: 34px;
+  width: 131px;
+  height: 38px;
   background-color: #B81F24;
   position: absolute;
-  position: fixed;
   left: 0;
-  top: 29px;
-  z-index: 2; }
-
-.ribbon h1 {
-  font: 300 22px/150% "Oswald", "Sans-serif", "serif";
-  letter-spacing: 2px;
-  position: absolute;
-  color: white;
-  left: 130px;
-  clear: both; }
-
-.ribbon h1 span {
-  color: #B81F24; }
+  top: 37px; }
+  .ribbon h1 {
+    font: 300 25px/150% "Oswald", "Sans-serif", "serif";
+    position: absolute;
+    color: #f7f7f7;
+    left: 140px;
+    clear: both; }
+    .ribbon h1 span {
+      color: #B81F24; }
 
 .devribbon {
-  width: 310px;
+  width: 265px;
   background-color: #B81F24;
   float: right;
   position: absolute;
   right: 0;
-  top: 150px;
+  top: 37px;
   z-index: 0; }
+  .devribbon h1 {
+    font: 300 25px/150% "Oswald", "Sans-serif", "serif";
+    color: #f7f7f7;
+    letter-spacing: 1px;
+    padding-left: 15px;
+    padding-top: 1px;
+    letter-spacing: 2px; }
 
-.devribbon h1 {
-  font: 300 28px/150% "Oswald", "Sans-serif", "serif";
-  letter-spacing: 2px;
-  padding-left: 15px;
-  padding-top: 3px;
-  padding-bottom: 3px; }
+/*
+====================================================
+Section Ribbon
+====================================================
+*/
+.aboutribbon {
+  background: #262626;
+  width: 325px;
+  float: left;
+  -webkit-box-shadow: 2px 2px 2px #262626;
+          box-shadow: 2px 2px 2px #262626; }
+  .aboutribbon h1 {
+    font: 300 25px/150% "Oswald", "Sans-serif", "serif";
+    letter-spacing: 2px;
+    padding-left: 15px;
+    color: #f7f7f7; }
+    .aboutribbon h1 a:link {
+      text-decoration: none; }
+
+/*
+====================================================
+About Section
+====================================================
+*/
+.aboutsection {
+  width: 100%;
+  margin-top: -3px; }
+
+.aboutcontent {
+  clear: both;
+  margin-top: 50px; }
+
+.writeup {
+  background: #f0f0f0;
+  width: 100%;
+  margin: 0 auto; }
+  .writeup img {
+    width: 350px;
+    margin: 0 70px 50px 15%;
+    -webkit-box-shadow: 2px 2px 2px #262626;
+            box-shadow: 2px 2px 2px #262626;
+    float: left; }
+  .writeup h3 {
+    font: 400 23px/150% "Dosis", "Sans-serif", "serif"; }
+  .writeup p {
+    font: 400 16px/150% "Dosis", "Sans-serif", "serif";
+    padding-bottom: 7px;
+    width: 79%; }
+
+.aboutcontent ul li {
+  font: 400 16px/150% "Dosis", "Sans-serif", "serif";
+  list-style-type: disc;
+  width: 80%; }
 
 /*
 ====================================================
 Portfolio Section
 ====================================================
 */
-/*.portfoliosection {
-  width:100%;
-}*/
+.portup {
+  clear: both; }
+
 .portfoliosection {
-  background: #000;
+  background: #f0f0f0; }
+
+.portfoliopiece {
+  width: 30%;
+  position: relative;
+  margin-top: 70px;
+  margin-left: 35px; }
+
+.portfolioPieceContent {
+  position: absolute;
+  height: 99%;
   width: 100%;
-  opacity: 0.8; }
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+  color: white;
+  text-align: center;
+  padding-top: 20%; }
+  .portfolioPieceContent p {
+    font: 400 17px/150% "Dosis", "Sans-serif", "serif"; }
+  .portfolioPieceContent h3 {
+    font: 400 21px/150% "Dosis", "Sans-serif", "serif"; }
 
-.portfoliosection h1 {
-  font: 400 28px/150% "Quicksand", "Sans-serif", "serif";
-  padding: 20px;
-  color: #fff;
-  letter-spacing: 2px; }
+.portfoliopiece:hover .portfolioPieceContent {
+  visibility: visible;
+  opacity: 1; }
 
-#responsive,
-#other-portfolio-item,
-#htmlcssjquery-client-site {
-  float: left;
-  padding-left: 10px;
-  text-align: center; }
+.portfolioPicture img {
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 2px 2px 2px #262626;
+          box-shadow: 2px 2px 2px #262626; }
+
+.viewmore {
+  padding-bottom: 50px; }
+  .viewmore a {
+    font: 400 24px/150% "Dosis", "Sans-serif", "serif";
+    color: #262626;
+    text-align: center;
+    text-decoration: none; }
+    .viewmore a:hover {
+      color: #B81F24;
+      -webkit-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
+
+/*
+====================================================
+Contact Section
+====================================================
+*/
+.contact {
+  width: 100%;
+  background: #f0f0f0; }
+
+.contactform {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  margin-left: 80px; }
+  .contactform p {
+    font: 400 17px/150% "Dosis", "Sans-serif", "serif"; }
+    .contactform p input {
+      background: #f0f0f0;
+      border: none;
+      border-bottom: 1px solid #cccccc; }
+      .contactform p input:focus {
+        outline: 0; }
+    .contactform p textarea {
+      background: #f0f0f0;
+      border: 1px solid #cccccc; }
+      .contactform p textarea:focus {
+        outline: 0; }
+
+.contactform input[type="submit"] {
+  width: 100px;
+  margin-left: 2px;
+  font: 400 16px/150% "Dosis", "Sans-serif", "serif";
+  border-radius: 5px; }
+  .contactform input[type="submit"]:hover {
+    cursor: pointer;
+    background: #B81F24;
+    opacity: 0.75;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+
+/*
+====================================================
+Blog Section
+====================================================
+*/
+article {
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 150px;
+  font: 400 20px/180% "Source Serif Pro", "Open Sans", sans-serif; }
+  article h2 a {
+    font: 400 50px/150% "Oswald", "Open Sans", sans-serif;
+    text-decoration: none;
+    color: black; }
+
+/*
+====================================================
+Single Blog Section
+====================================================
+*/
+.full {
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 150px;
+  font: 400 20px/180% "Source Serif Pro", "Open Sans", sans-serif; }
+  .full h2 a {
+    font: 400 50px/150% "Oswald", "Open Sans", sans-serif;
+    text-decoration: none;
+    color: black; }
+
+/*
+====================================================
+Footer Section
+====================================================
+*/
+.footer {
+  clear: both;
+  text-align: center;
+  font: 400 13px/150% "Dosis", "Sans-serif", "serif"; }
