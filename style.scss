@@ -74,6 +74,12 @@ My Code Starts Here
 =========================================================================================================================================================
 */
 
+/*
+=========================================================================================================================================================
+Front/Home Page
+=========================================================================================================================================================
+*/
+
 body {
   width: 100%;
   background:#f0f0f0;
@@ -110,21 +116,21 @@ Header and Background
 }
 
 .menu {
-  background-color: #262626;
+  background-color: #000;
+  opacity: 0.6;
   position: fixed;
   right:0;
   top: 200px;
   z-index: 1;
-  width: 265px;
-  box-shadow: 2px 2px 2px #262626;
-  // opacity: 0.75;
-  // &:hover {
-  //   opacity:1;
-  //   -webkit-transition: all 0.3s ease-out;
-  //   -moz-transition: all 0.3s ease-out;
-  //   -o-transition: all 0.3s ease-out;
-  //   transition: all 0.3s ease-out;
-  // }
+  width: 120px; 
+  box-shadow: 3px 2px 5px #262626;
+  &:hover {
+    opacity:1;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
 }
 
 .menu li {
@@ -283,6 +289,7 @@ Portfolio Section
   padding-top: 20%;
   p {
     font: 400 17px/150% "Dosis", "Sans-serif", "serif";
+    padding:1px;
   }
   h3{
     font: 400 21px/150% "Dosis", "Sans-serif", "serif";
@@ -320,26 +327,6 @@ Portfolio Section
 
 
 
-// #responsive,
-// #other-portfolio-item,
-// #htmlcssjquery-client-site {
-//   margin-top: 50px;
-//   margin-bottom: 50px;
-//   float: left;
-//   text-align: center;
-//   width: 30%;
-//   padding: 10px;
-//   h2 {
-//     font: 400 18px/150% "Source Sans Pro", "Sans-serif", "serif";
-//   }
-//   h3 {
-//     font: 400 14px/150% "Source Sans Pro", "Sans-serif", "serif";
-//   }
-// }
-
-
-
-
 /*
 ====================================================
 Contact Section
@@ -368,9 +355,9 @@ Contact Section
 }
 
 .socialicons {
-  padding-top: 10px;
   i {
-    padding-right: 22px;
+    padding-right: 17px;
+    padding-top:7px;
     color: black;
   &:hover {
     color: #B81F24;
@@ -463,10 +450,32 @@ Contact Section
  //  box-shadow: 1px 1px 1px #262626;
  // }
 
+/*
+=========================================================================================================================================================
+Portfolio Archive Page
+=========================================================================================================================================================
+*/
+
+
+.archiveportfolio img{
+  width: 500px;
+  float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 =========================================================================================================================================================
-Blog Section
+Blog Archive Page
 =========================================================================================================================================================
 */
 
@@ -485,7 +494,7 @@ article  {
 
 /*
 ====================================================
-Single Blog Section
+Single Blog Post Page
 ====================================================
 */
 
