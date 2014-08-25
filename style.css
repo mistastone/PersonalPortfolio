@@ -86,9 +86,18 @@ img {
 My Code Starts Here
 =========================================================================================================================================================
 */
+/*
+=========================================================================================================================================================
+Front/Home Page
+=========================================================================================================================================================
+*/
 body {
   width: 100%;
   background: #f0f0f0; }
+
+a {
+  text-decoration: none;
+  color: #f7f7f7; }
 
 /*
 ====================================================
@@ -113,25 +122,29 @@ Header and Background
     /* position: fixed;*/ }
 
 .menu {
-  background-color: #262626;
+  background-color: #000;
+  opacity: 0.6;
   position: fixed;
   right: 0;
   top: 200px;
   z-index: 1;
-  width: 288px;
-  -webkit-box-shadow: 2px 2px 2px #262626;
-          box-shadow: 2px 2px 2px #262626; }
+  width: 120px;
+  -webkit-box-shadow: 3px 2px 5px #262626;
+          box-shadow: 3px 2px 5px #262626;
+  -webkit-transition: all 0.3s ease-out; }
+  .menu:hover {
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-out; }
 
 .menu li {
   list-style: none;
   float: left;
-  padding: 1px 15px 1px 15px;
+  padding: 3px 5px 3px 13px;
   letter-spacing: 1px;
   color: #f7f7f7; }
   .menu li a:hover {
     color: #B81F24;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out; }
+    -webkit-transition: all 0.3s ease-out; }
 
 .ribbon {
   width: 131px;
@@ -145,7 +158,8 @@ Header and Background
     position: absolute;
     color: #f7f7f7;
     left: 140px;
-    clear: both; }
+    clear: both;
+    width: 300px; }
     .ribbon h1 span {
       color: #B81F24; }
 
@@ -198,7 +212,6 @@ About Section
   margin-top: 50px; }
 
 .writeup {
-  background: #f0f0f0;
   width: 100%;
   margin: 0 auto; }
   .writeup img {
@@ -208,7 +221,8 @@ About Section
             box-shadow: 2px 2px 2px #262626;
     float: left; }
   .writeup h3 {
-    font: 400 23px/150% "Dosis", "Sans-serif", "serif"; }
+    font: 400 23px/150% "Dosis", "Sans-serif", "serif";
+    color: #B81F24; }
   .writeup p {
     font: 400 16px/150% "Dosis", "Sans-serif", "serif";
     padding-bottom: 7px;
@@ -227,13 +241,10 @@ Portfolio Section
 .portup {
   clear: both; }
 
-.portfoliosection {
-  background: #f0f0f0; }
-
 .portfoliopiece {
   width: 30%;
   position: relative;
-  margin-top: 70px;
+  margin-top: 90px;
   margin-left: 35px; }
 
 .portfolioPieceContent {
@@ -251,9 +262,11 @@ Portfolio Section
   text-align: center;
   padding-top: 20%; }
   .portfolioPieceContent p {
-    font: 400 17px/150% "Dosis", "Sans-serif", "serif"; }
+    font: 400 17px/150% "Dosis", "Sans-serif", "serif";
+    padding: 1px; }
   .portfolioPieceContent h3 {
-    font: 400 21px/150% "Dosis", "Sans-serif", "serif"; }
+    font: 400 21px/150% "Dosis", "Sans-serif", "serif";
+    color: #f7f7f7; }
 
 .portfoliopiece:hover .portfolioPieceContent {
   visibility: visible;
@@ -266,9 +279,10 @@ Portfolio Section
           box-shadow: 2px 2px 2px #262626; }
 
 .viewmore {
-  padding-bottom: 50px; }
+  padding-bottom: 35px;
+  padding-top: 10px; }
   .viewmore a {
-    font: 400 24px/150% "Dosis", "Sans-serif", "serif";
+    font: 300 29px/150% "Oswald", "Sans-serif", "serif";
     color: #262626;
     text-align: center;
     text-decoration: none; }
@@ -283,13 +297,34 @@ Contact Section
 ====================================================
 */
 .contact {
-  width: 100%;
-  background: #f0f0f0; }
+  width: 36%;
+  float: left; }
+
+.address {
+  margin-top: 70px;
+  width: 31%;
+  float: left; }
+  .address h3 {
+    font: 400 23px/80% "Dosis", "Sans-serif", "serif";
+    padding-bottom: 10px;
+    color: #B81F24; }
+  .address p {
+    font: 400 16px/150% "Dosis", "Sans-serif", "serif";
+    padding-bottom: 20px; }
+
+.socialicons i {
+  padding-right: 17px;
+  padding-top: 7px;
+  color: black; }
+  .socialicons i:hover {
+    color: #B81F24;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
 
 .contactform {
-  margin-top: 70px;
-  margin-bottom: 40px;
-  margin-left: 80px; }
+  clear: both;
+  margin-left: 50px;
+  padding-top: 30px; }
   .contactform p {
     font: 400 17px/150% "Dosis", "Sans-serif", "serif"; }
     .contactform p input {
@@ -300,7 +335,9 @@ Contact Section
         outline: 0; }
     .contactform p textarea {
       background: #f0f0f0;
-      border: 1px solid #cccccc; }
+      border: 1px solid #cccccc;
+      height: 100px;
+      max-width: 100%; }
       .contactform p textarea:focus {
         outline: 0; }
 
@@ -308,18 +345,52 @@ Contact Section
   width: 100px;
   margin-left: 2px;
   font: 400 16px/150% "Dosis", "Sans-serif", "serif";
-  border-radius: 5px; }
+  color: black;
+  border-radius: 5px;
+  border: 1px solid #cccccc; }
   .contactform input[type="submit"]:hover {
     cursor: pointer;
-    background: #B81F24;
-    opacity: 0.75;
+    -webkit-box-shadow: 1px 1px 1px #262626;
+            box-shadow: 1px 1px 1px #262626;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out; }
+  .contactform input[type="submit"]:active {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
+
+.wpcf7-response-output {
+  font: 400 16px/150% "Dosis", "Sans-serif", "serif"; }
 
 /*
-====================================================
-Blog Section
-====================================================
+=========================================================================================================================================================
+Portfolio Archive Page
+=========================================================================================================================================================
+*/
+.archiveportfolio {
+  width: 45%;
+  margin: 0 auto;
+  margin-top: 150px; }
+
+.notfrontpage span h1 {
+  color: #262626; }
+
+.archivepiece a {
+  color: #262626; }
+
+.archivepiece h2 {
+  font: 400 35px/150% "Dosis", "Sans-serif", "serif";
+  color: #262626; }
+
+.archivepiece p {
+  font: 400 17px/150% "Dosis", "Sans-serif", "serif";
+  color: #262626; }
+
+/*
+=========================================================================================================================================================
+Blog Archive Page
+=========================================================================================================================================================
 */
 article {
   width: 55%;
@@ -333,7 +404,7 @@ article {
 
 /*
 ====================================================
-Single Blog Section
+Single Blog Post Page
 ====================================================
 */
 .full {
@@ -354,4 +425,5 @@ Footer Section
 .footer {
   clear: both;
   text-align: center;
-  font: 400 13px/150% "Dosis", "Sans-serif", "serif"; }
+  font: 400 15px/150% "Dosis", "Sans-serif", "serif";
+  padding-top: 50px; }
