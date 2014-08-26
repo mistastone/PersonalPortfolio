@@ -452,14 +452,6 @@ Contact Section
  //  width: 300px;
  // }
 
-// Google Map
-
- // iframe {
- //  position: relative;
- //  right: 0;
- //  top: 30px;
- //  box-shadow: 1px 1px 1px #262626;
- // }
 
 /*
 =========================================================================================================================================================
@@ -469,13 +461,14 @@ Portfolio Archive Page
 
 
 .archiveportfolio {
-  width:45%;
+  width:50%;
   margin: 0 auto;
   margin-top: 150px;
   img {
   // float: left;
 }
 }
+
 
 .notfrontpage span h1 {
   color: #262626;
@@ -502,29 +495,30 @@ Portfolio Single Page
 */
 
 .single-portfolio h2 {
-  font: 400 35px/150% "Dosis", "Sans-serif", "serif";
+  font: 400 45px/150% "Dosis", "Sans-serif", "serif";
   color: #262626;
 }
 
 
-// #other-portfolio-item img:last-child {
-//   position: relative;
-//   bottom: 248px;
-//   left: 202px;
-//   width: 500px;
-// }
+.single-portfolio p {
+    font: 400 21px/150% "Dosis", "Sans-serif", "serif";
+    span {
+      font-size: 25px;
+      display: inline-block;
+      padding-right: 8px;
+      padding-left: 8px;
+    }
+  }
 
-// #other-portfolio-item img:nth-child(2) {
-//   width: 750px;
-// }
+.single-portfolio h1,
+.archive h1 {
+  font-size: 38px;
+  top: -9px;
+}
 
-// #htmlcssjquery-client-site {
-//   clear:both;
-// }
-
-
-
-
+.viewonline {
+  padding-top: 0;
+}
 
 
 
@@ -536,7 +530,7 @@ Blog Archive Page
 
 
 article  {
-  width: 55%;
+  width: 50%;
   margin: 0 auto;
   margin-top: 150px;
   font: 400 20px/180% "Source Serif Pro", "Open Sans", sans-serif;
@@ -545,6 +539,14 @@ article  {
     text-decoration: none;
     color: black;
   }
+  li a{
+    color: #262626;
+    text-decoration: underline;
+  }
+  }
+  .archive p a {
+    color: #B81F24;
+    font-size: 25px;
   }
 
 /*
@@ -554,10 +556,9 @@ Single Blog Post Page
 */
 
 .full  {
-  width: 55%;
+  width: 50%;
   margin: 0 auto;
   margin-top: 150px;
-  font: 400 20px/180% "Source Serif Pro", "Open Sans", sans-serif;
   h2 a {
     font: 400 50px/150% "Oswald", "Open Sans", sans-serif;
     text-decoration: none;
@@ -574,9 +575,14 @@ Single Blog Post Page
     padding-bottom: 12px;
   }
 
+  .single-blog p {
+    font: 400 20px/180% "Source Serif Pro", "Open Sans", sans-serif;
+  }
+
   .single-blog .full a {
     color: #262626;
     text-decoration: underline;
+    font: 400 20px/150% "Source Serif Pro", "Open Sans", sans-serif;
     &:hover {
       color:#B81F24;
       -webkit-transition: all 0.3s ease-out;
@@ -586,13 +592,14 @@ Single Blog Post Page
     }
   }
 
+
 /*
 ====================================================
 Footer Section
 ====================================================
 */
 
-.footer {
+.footer p {
   clear: both;
   text-align: center;
   font: 400 15px/150% "Dosis", "Sans-serif", "serif";
