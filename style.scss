@@ -170,7 +170,7 @@ Header and Background
   color: #f7f7f7;
   left: 140px;
   clear: both;
-  width: 300px;
+  width: 415px;
   span {
     color:#B81F24;
   }
@@ -347,6 +347,7 @@ Contact Section
 .contact {
   width: 36%;
   float: left;
+  margin-bottom: 50px;
   // background:#f0f0f0;
 }
 
@@ -502,13 +503,12 @@ Portfolio Single Page
 
 .single-portfolio p {
     font: 400 21px/150% "Dosis", "Sans-serif", "serif";
-    span {
-      font-size: 25px;
-      display: inline-block;
-      padding-right: 8px;
-      padding-left: 8px;
     }
-  }
+
+.languages {
+  font: 400 25px/150% "Dosis", "Sans-serif", "serif";
+  text-align: center;
+}
 
 .single-portfolio h1,
 .archive h1 {
@@ -570,7 +570,8 @@ Single Blog Post Page
     font: 400 50px/150% "Oswald", "Open Sans", sans-serif;
   }
 
-  .single-blog h3 {
+  .single-blog h3,
+  .archive h3 {
     font: 300 21px/150% "Oswald", "Open Sans", sans-serif;
     padding-bottom: 12px;
   }
@@ -599,9 +600,14 @@ Footer Section
 ====================================================
 */
 
-.footer p {
+.footer {
+  margin-top:50px;  
+  p {
+  background:#262626;
+  opacity: 0.75;
   clear: both;
   text-align: center;
+  color: #f0f0f0;
   font: 400 15px/150% "Dosis", "Sans-serif", "serif";
-  padding-top:50px;
+}
 }

@@ -7,16 +7,18 @@
 <div class="section">
   <div class="innerWrapper">
     <div class="full">
-
-      <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
         
-    <h2><?php the_title(); ?></h2>
-    <?php if ( has_post_thumbnail() ) {
-	the_post_thumbnail();
-} ?>
-    <h3>Written by <?php $author = the_author(); ?> Stone on <?php the_date(); ?></h3> 
-	<?php the_content(); ?>
-      <?php endwhile; // end of the loop. ?>
+    <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+        <h2><?php the_title(); ?></h2>
+        <h3>Written by <?php the_author(); ?> Stone on <?php the_date(); ?></h3> 
+
+        <?php while( has_sub_field('images') ): ?>
+            <?php $image = get_sub_field('image'); ?>
+            <img src="<?php echo $image['sizes']['large'] ?>">
+        <?php endwhile; ?>
+        <?php the_content(); ?>
+    <?php endwhile; // end of the loop. ?>
+
     </div>
   </div> <!-- /.innerWrapper -->
 </div> <!-- /.section -->

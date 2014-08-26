@@ -7,10 +7,10 @@
 <div class="section">
   <div class="innerWrapper">
     <div class="left">
-
       <?php if ( have_posts() ) the_post(); ?>
-      <!-- <h3>Written by <?php $author = the_author(); ?> Stone on <?php the_date(); ?></h3>  -->
 
+
+      <!-- <h3>Written by <?php $author = the_author(); ?> Stone on <?php the_date(); ?></h3>
 
    <!--  <h1>
         <?php if ( is_day() ) : ?>
@@ -26,6 +26,7 @@
 
 
       <?php
+      
   /* Since we called the_post() above, we need to
    * rewind the loop back to the beginning that way
    * we can run the loop properly, in full.
@@ -36,7 +37,8 @@
    * If you want to overload this in a child theme then include a file
    * called loop-archives.php and that will be used instead.
    */
-  get_template_part( 'loop', 'archive', 'author' );
+  get_template_part( 'loop', 'blog' );
+
   ?>
 
 

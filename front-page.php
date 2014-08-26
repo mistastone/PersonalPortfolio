@@ -66,7 +66,7 @@
 	      <?php
 	      $onePageQuery = new WP_Query( 
 	        array( 
-	          'posts_per_page' => -1,
+	          'posts_per_page' => 6,
 	          'post_type' => 'portfolio', 
 	          'orderby' => 'menu_order',
 	          'order' => 'ASC'
