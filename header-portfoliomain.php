@@ -52,7 +52,7 @@
   
   
 
-    <?php wp_nav_menu( array( 'container' => false, 'menu' => 'header' ) ); ?>
+    <?php wp_nav_menu( array( 'container' => false, 'menu' => 'port' ) ); ?>
  <!--  <div class="ribbon">
       <h1>@by<span>Michael</span>Stone</h1>
   </div> -->

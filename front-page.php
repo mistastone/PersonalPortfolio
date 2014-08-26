@@ -156,7 +156,9 @@
 		<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2887.036545084868!2d-79.39772800000001!3d43.647408!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34dc87fa67bd%3A0xe05376a9e49647e1!2s483+Queen+St+W%2C+Toronto%2C+ON+M5V+2A9%2C+Canada!5e0!3m2!1sen!2sus!4v1408851992099" width="300" height="300" frameborder="0" style="border:0"></iframe> -->
 
 
+
 <?php get_footer(); ?>
+
 
 
 <!-- Skills Section -->

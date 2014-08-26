@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('portfoliomain'); ?>
 
 <div class="ribbon notfrontpage">
       <span class "notfronth1"><h1><?php the_title(); ?></h1></span>

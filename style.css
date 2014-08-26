@@ -313,7 +313,7 @@ Contact Section
     padding-bottom: 20px; }
 
 .socialicons i {
-  padding-right: 17px;
+  padding-right: 12px;
   padding-top: 7px;
   color: black; }
   .socialicons i:hover {
@@ -389,6 +389,15 @@ Portfolio Archive Page
 
 /*
 =========================================================================================================================================================
+Portfolio Single Page
+=========================================================================================================================================================
+*/
+.single-portfolio h2 {
+  font: 400 35px/150% "Dosis", "Sans-serif", "serif";
+  color: #262626; }
+
+/*
+=========================================================================================================================================================
 Blog Archive Page
 =========================================================================================================================================================
 */
@@ -416,6 +425,21 @@ Single Blog Post Page
     font: 400 50px/150% "Oswald", "Open Sans", sans-serif;
     text-decoration: none;
     color: black; }
+
+.single-blog h2 {
+  font: 400 50px/150% "Oswald", "Open Sans", sans-serif; }
+
+.single-blog h3 {
+  font: 300 21px/150% "Oswald", "Open Sans", sans-serif;
+  padding-bottom: 12px; }
+
+.single-blog .full a {
+  color: #262626;
+  text-decoration: underline; }
+  .single-blog .full a:hover {
+    color: #B81F24;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
 
 /*
 ====================================================
