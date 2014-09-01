@@ -21,9 +21,7 @@
             <img src="<?php echo $image['sizes']['large'] ?>">
     
       <?php endwhile; ?>
-      <div class="viewmore viewonline">
-      <a href=""><h1>View Project Online</h1></a>
-      </div>
+      
     </div>
   </div> <!-- /.innerWrapper -->
 </div> <!-- /.section -->

@@ -4,11 +4,11 @@
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head> 
-	<?php // Load Meta ?>
+  <?php // Load Meta ?>
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+  <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   <!-- <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'> -->
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600' rel='stylesheet' type='text/css'>
@@ -30,32 +30,14 @@
 	<script src="<?php bloginfo('stylesheet_directory');?>/js/scripts.js"></script>
 </head>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-<script src="wp-content/themes/theme-hackeryou/js/jquery.smooth-scroll.min.js"></script>
-
-<script type="text/javascript" charset="utf-8">
- $(document).ready(function() {
-    //jquery code goes here
-    $('.nav a').smoothScroll({
-      offset: -45,
-      speed: 500,
-    });
-  });
-</script>
-
 <body <?php body_class(); ?>>
 
 <div class="header">
-
   <div class="innerWrapper">
   
   
 
     <?php wp_nav_menu( array( 'container' => false, 'menu' => 'header' ) ); ?>
- <!--  <div class="ribbon">
-      <h1>@by<span>Michael</span>Stone</h1>
-  </div> -->
 
   </div> <!-- /.innerWrapper -->
 </div><!--/.header-->

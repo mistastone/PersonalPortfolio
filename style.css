@@ -104,6 +104,9 @@ a {
 Header and Background
 ====================================================
 */
+.hamburger {
+  position: absolute; }
+
 .mainbackground {
   width: 100%;
   margin: 0 auto; }
@@ -148,13 +151,13 @@ Header and Background
 
 .ribbon {
   width: 131px;
-  height: 38px;
+  height: 46px;
   background-color: #B81F24;
   position: absolute;
   left: 0;
   top: 37px; }
   .ribbon h1 {
-    font: 300 25px/150% "Oswald", "Sans-serif", "serif";
+    font: 300 30px/150% "Oswald", "Sans-serif", "serif";
     position: absolute;
     color: #f7f7f7;
     left: 140px;
@@ -172,7 +175,7 @@ Header and Background
   top: 37px;
   z-index: 0; }
   .devribbon h1 {
-    font: 300 25px/150% "Oswald", "Sans-serif", "serif";
+    font: 300 30px/150% "Oswald", "Sans-serif", "serif";
     color: #f7f7f7;
     letter-spacing: 1px;
     padding-left: 15px;
@@ -244,12 +247,12 @@ Portfolio Section
 .portfoliopiece {
   width: 30%;
   position: relative;
-  margin-top: 90px;
+  margin-top: 75px;
   margin-left: 35px; }
 
 .portfolioPieceContent {
   position: absolute;
-  height: 99%;
+  height: 83%;
   width: 100%;
   top: 0;
   left: 0;
@@ -267,6 +270,10 @@ Portfolio Section
   .portfolioPieceContent h3 {
     font: 400 21px/150% "Dosis", "Sans-serif", "serif";
     color: #f7f7f7; }
+  .portfolioPieceContent h4 {
+    font: 400 21px/150% "Dosis", "Sans-serif", "serif";
+    padding-top: 10px;
+    text-decoration: underline; }
 
 .portfoliopiece:hover .portfolioPieceContent {
   visibility: visible;
@@ -278,11 +285,21 @@ Portfolio Section
   -webkit-box-shadow: 2px 2px 2px #262626;
           box-shadow: 2px 2px 2px #262626; }
 
+.languages a {
+  font: 300 29px/150% "Oswald", "Sans-serif", "serif";
+  color: #262626;
+  text-align: center;
+  text-decoration: none; }
+  .languages a:hover {
+    color: #B81F24;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+
 .viewmore {
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   padding-top: 10px; }
   .viewmore a {
-    font: 300 29px/150% "Oswald", "Sans-serif", "serif";
+    font: 300 33px/150% "Oswald", "Sans-serif", "serif";
     color: #262626;
     text-align: center;
     text-decoration: none; }
@@ -290,6 +307,14 @@ Portfolio Section
       color: #B81F24;
       -webkit-transition: all 0.3s ease-out;
       transition: all 0.3s ease-out; }
+
+.langfront h4 {
+  text-align: center;
+  padding-top: 15px;
+  font: 400 21px/150% "Dosis", "Sans-serif", "serif"; }
+
+.more {
+  display: none; }
 
 /*
 ====================================================
@@ -360,6 +385,9 @@ Contact Section
             box-shadow: none;
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out; }
+
+.mobile {
+  display: none; }
 
 .wpcf7-response-output {
   font: 400 16px/150% "Dosis", "Sans-serif", "serif"; }
@@ -448,6 +476,9 @@ Single Blog Post Page
     text-decoration: none;
     color: black; }
 
+.single-blog h1 {
+  display: none; }
+
 .single-blog h2 {
   font: 400 50px/150% "Oswald", "Open Sans", sans-serif; }
 
@@ -475,10 +506,303 @@ Footer Section
 */
 .footer {
   margin-top: 50px; }
-  .footer p {
+  .footer h6 {
     background: #262626;
     opacity: 0.75;
     clear: both;
     text-align: center;
     color: #f0f0f0;
     font: 400 15px/150% "Dosis", "Sans-serif", "serif"; }
+
+@media all and (max-width: 1024px) {
+  .menu {
+    width: 350px;
+    opacity: 0.75;
+    top: 0;
+    background-color: #262626; }
+
+  .ribbon {
+    top: 90px; }
+
+  .devribbon {
+    top: 90px; }
+
+  .writeup img {
+    margin: 0 70px 50px 8%; }
+
+  .writeup p {
+    width: auto;
+    padding-right: 29px; }
+
+  .aboutcontent ul li {
+    width: auto; }
+
+  .portfoliopiece {
+    width: 44%; }
+
+  .portfolioPieceContent {
+    height: 84%; }
+
+  .address {
+    width: 37%;
+    float: right;
+    margin-right: 90px; }
+
+  .more {
+    display: block; }
+
+  .ribbon.notfrontpage {
+    top: 45px; }
+
+  .archiveportfolio {
+    width: 70%; }
+
+  .archivepiece p {
+    font-size: 19px; }
+
+  .full {
+    width: 70%; }
+
+  .single-portfolio p {
+    font-size: 19px; }
+
+  article {
+    width: 70%; } }
+@media all and (max-width: 960px) {
+  .writeup img {
+    margin: 0 60px 50px 9%; } }
+@media all and (max-width: 886px) {
+  .writeup img {
+    margin: 0 60px 50px 5%; } }
+@media all and (max-width: 768px) {
+  .ribbon {
+    top: 80px; }
+
+  .devribbon {
+    top: 80px; }
+
+  .writeup img {
+    margin: 0 30px 50px; }
+
+  .portfolioPieceContent {
+    height: 80%;
+    padding-top: 5%; } }
+@media all and (max-width: 640px) {
+  .menu {
+    width: 100%; }
+
+  .viewmore {
+    margin-left: 5%; }
+
+  .ribbon {
+    right: 0;
+    left: auto;
+    top: 110px;
+    width: 265px;
+    height: 39px; }
+    .ribbon h1 {
+      left: 9px; }
+      .ribbon h1 span {
+        color: #262626; }
+
+  .ribbon h1 {
+    left: 0;
+    padding-left: 8px;
+    width: auto;
+    font-size: 24px; }
+
+  .devribbon {
+    top: 165px;
+    width: 220px; }
+    .devribbon h1 {
+      font-size: 24px;
+      padding-left: 11px; }
+
+  .writeup img {
+    float: none;
+    width: 300px;
+    margin-left: 28%;
+    margin-bottom: 25px; }
+
+  .writeup p {
+    padding-right: 50px;
+    padding-left: 50px; }
+
+  .writeup h3 {
+    padding-left: 50px; }
+
+  .writeup ul {
+    padding-bottom: 50px; }
+    .writeup ul li {
+      margin-left: 50px; }
+
+  .archiveportfolio {
+    width: 90%; }
+
+  .contactform {
+    margin-left: 30px; }
+
+  textarea {
+    width: 272px;
+    max-width: none; }
+
+  .socialicons i {
+    padding-right: 7px; }
+
+  .address {
+    margin-right: 0;
+    margin-top: 0;
+    float: none;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  .contactform p textarea {
+    max-width: none; }
+
+  .ribbon.notfrontpage {
+    width: 85px;
+    height: 39px;
+    background-color: #B81F24;
+    position: absolute;
+    left: 0;
+    top: 80px; }
+    .ribbon.notfrontpage h1 {
+      font: 300 31px/150% "Oswald", "Sans-serif", "serif";
+      position: absolute;
+      top: -4px;
+      color: #262626;
+      left: 100px;
+      clear: both;
+      width: 345px;
+      left: 85px; }
+
+  .full {
+    width: 90%; }
+
+  .single-blog h2 {
+    font-size: 39px; }
+
+  .single-blog p {
+    font: 400 19px/150% "Source Serif Pro", "Open Sans", sans-serif; }
+
+  article {
+    width: 90%;
+    font: 400 19px/170% "Source Serif Pro", "Open Sans", sans-serif; }
+    article h2 a {
+      font-size: 39px; }
+
+  .archiveportfolio {
+    width: 77%; }
+
+  .contact {
+    float: none; }
+
+  .archivepiece p {
+    margin-bottom: 15px; }
+
+  .archivepiece h2 {
+    font-size: 32px; }
+
+  .address {
+    float: none;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  .notmobile {
+    display: none; }
+
+  .mobile {
+    display: inline; } }
+@media all and (max-width: 400px) {
+  .ribbon {
+    width: 200px;
+    height: 33px;
+    top: 70px; }
+    .ribbon h1 {
+      font-size: 21px; }
+
+  .ribbon.notfrontpage h1 {
+    width: auto; }
+
+  .devribbon {
+    top: 113px;
+    width: 200px; }
+    .devribbon h1 {
+      font-size: 21px; }
+
+  .header {
+    font-size: 19px; }
+
+  .menu li {
+    padding: 3px 0 3px 13px; }
+
+  .aboutribbon {
+    width: 230px; }
+
+  .writeup img {
+    width: 240px;
+    margin-left: 12%; }
+
+  .writeup p {
+    padding-left: 30px;
+    padding-right: 30px; }
+
+  .writeup h3 {
+    padding-left: 29px; }
+
+  .portfoliopiece {
+    width: 81%;
+    margin-top: 50px; }
+
+  .portfolioPieceContent {
+    height: 80%;
+    padding-top: 2%; }
+    .portfolioPieceContent p {
+      font-size: 12px; }
+
+  .langfront h4 {
+    font-size: 17px; }
+
+  .viewmore {
+    margin-right: 12px; }
+
+  .notmobile {
+    display: none; }
+
+  .mobile {
+    display: inline; }
+
+  article {
+    width: 90%;
+    font: 400 19px/150% "Source Serif Pro", "Open Sans", sans-serif; }
+    article h2 a {
+      font-size: 39px; }
+
+  .ribbon.notfrontpage h1 {
+    font-size: 25px;
+    top: 1px;
+    width: 225px;
+    left: 85px; }
+
+  .ribbon.notfrontpage {
+    width: 85px; }
+
+  .full {
+    width: 90%; }
+
+  .single-blog h2 {
+    font-size: 39px; }
+
+  .single-blog p {
+    font: 400 19px/150% "Source Serif Pro", "Open Sans", sans-serif; }
+
+  .archiveportfolio {
+    width: 90%; }
+
+  .archivepiece p {
+    margin-bottom: 15px; }
+
+  .archivepiece h2 {
+    font-size: 32px; } }

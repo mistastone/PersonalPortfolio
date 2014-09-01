@@ -1,6 +1,6 @@
 <div class="footer">
 	<div class="innerWrapper">
-    <p>Powered by Michael Stone &#169; <?php echo date('Y'); ?></p>
+    <h6>Powered by Michael Stone &#169; <?php echo date('Y'); ?></h6>
     <?php wp_footer(); ?>
   </div>
 </div>

@@ -39,8 +39,10 @@ $onePageQuery = new WP_Query(
       
           <?php $image = get_sub_field('image'); ?>
             <img src="<?php echo $image['sizes']['large'] ?>">
+      
     
       <?php endwhile; ?>
+
 
 
         <!-- <h3><?php the_field('short_description'); ?></h3> -->
